@@ -1,0 +1,109 @@
+/* Utility calsses */
+.animate {
+    animation-duration:1s;
+    animation-fill-mode: both;
+}
+
+.animate--delay-3s {
+    animation-delay: 3s;
+}
+
+.animate--delay-6s {
+    animation-delay: 6s;
+}
+
+.animate--delay-9s {
+    animation-delay: 9s;
+}
+
+.animate--delay-12s {
+    animation-delay: 12s;
+}
+
+.animate--delay-15s {
+    animation-delay: 15s;
+}
+
+.animate--delay-17s {
+    animation-delay: 17s;
+}
+
+/*Animations*/
+
+
+body {
+  background-color: black;
+  color: white;
+}
+
+head {
+  background-color: black;
+  color: white;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-600px);
+    }
+    to{transform: translateX(0);}
+}
+
+.slideInLeft{
+   animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(1900px);
+    }
+    to{transform: translateX(0);}
+}
+
+.slideInRight{
+   animation-name: slideInRight;
+    animation-timing-function: ease-in;
+}
+
+
+button{
+        background-color: white;
+        color: black;
+        border-color: black;
+        border-style: solid;
+        height: 110px;
+        width: 500px;
+        border-radius: 50px;
+       cursor:pointer;
+       font-weight: bold;
+       font-size: 40px;
+        
+    }
+
+
+
+div {
+  width: 130px;
+  column-count: 2;
+    column-gap: 4em;}
+
+
+h1{
+    font-family:roboto;
+    column-span:all;
+    color: white;
+}
+
+p{ margin-top: 0;}
+
+
+h2{
+    font-family:roboto;
+     column-span:all;
+}
+
+image{
+position: absolute;
+width:60px;
+height: 50px;
+}
